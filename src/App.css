@@ -1,38 +1,78 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@700&display=swap');
+
+body {
+  font-family: 'Karla', sans-serif;
+  background:#0B2434;
+  margin-top: 200px;
+  padding: 20px
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  height: 400px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  width: 300px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dice-container {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: 50px;
+  gap: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.die-box {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.held {
+  background-color: rgba(89, 227, 145, 1);
+}
+
+.roll-button {
+  width: 115px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(80, 53, 255, 1);
   color: white;
+  font-size: 20px;
+  margin-top: 25px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
